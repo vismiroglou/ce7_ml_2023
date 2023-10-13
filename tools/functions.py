@@ -1,4 +1,6 @@
 import numpy as np
+from sklearn.metrics import confusion_matrix
+from matplotlib import pyplot as plt
 
 def create_complete_datasets(data_dict):
     '''
@@ -24,3 +26,4 @@ def create_complete_datasets(data_dict):
     testset = np.concatenate(testset)
     testtargets = np.concatenate(testtargets)
     return trainset, traintargets, testset, testtargets
+
